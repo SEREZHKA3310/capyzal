@@ -99,14 +99,21 @@ input[type="button"] {
 
 .sport__wrapper > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 1.5625vw;
+  margin: 0 auto;
+}
+
+.sport__image {
+  aspect-ratio: 1/1;
+  width: 46.25vw;
 }
 
 .sport__title {
   color: var(--red);
-  font-size: 3.6rem;
+  font-size: clamp(3.6rem, 11.25vw, 5.2rem);
   font-weight: 700;
-  max-width: 134px;
+  max-width: clamp(134px, 41.875vw, 250px);
 }
 
 .sport__button {
@@ -219,6 +226,16 @@ summary::marker {
   transition: var(--transtion);
 }
 
+.map__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map__map {
+  width: clamp(300px, 93.75vw, 520px);
+  height: clamp(300px, 93.75vw, 520px);
+}
 
 .footer {
   background-color: var(--blue);
