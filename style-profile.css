@@ -116,17 +116,6 @@ input[type="button"] {
   margin-bottom: 1.5rem;
 }
 
-.personal__followers {
-  font-size: clamp(1.8rem, 5.625vw, 2.2rem);
-  color: var(--blue)
-}
-
-.personal__followers > span {
-  display: inline-block;
-  width: 2px;
-  height: 45px;
-  background-color: var(--blue);
-}
 
 .calendar__title {
   text-align: left;
